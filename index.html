@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatmaker</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+  </head>
+  <body>
+    <header>Beatmaker</header>
+
+    <main>
+      <div class="beatBoxes">
+        <div class="beatBox">
+          <h2>Kicks</h2>
+          <select class="kickSelect">
+            <option>Kick Classic</option>
+          </select>
+          <div class="pads">
+            <div class="pad o1 kickPad"></div>
+            <div class="pad o2 kickPad"></div>
+            <div class="pad o3 kickPad"></div>
+            <div class="pad o4 kickPad"></div>
+            <div class="muteBtn">
+              <button><img src="./assets/icons/volumeFull.svg" alt="" /></button>
+            </div>
+            <div class="pad o5 kickPad"></div>
+            <div class="pad o6 kickPad"></div>
+            <div class="pad o7 kickPad"></div>
+            <div class="pad o8 kickPad"></div>
+          </div>
+        </div>
+
+        <div class="beatBox">
+          <h2>Hihat</h2>
+          <select class="hihatSelect">
+            <option>Hihat Classic</option>
+          </select>
+          <div class="pads">
+            <div class="pad o1 hihatPad"></div>
+            <div class="pad o2 hihatPad"></div>
+            <div class="pad o3 hihatPad"></div>
+            <div class="pad o4 hihatPad"></div>
+            <div class="muteBtn">
+              <button><img src="./assets/icons/volumeFull.svg" alt="" /></button>
+            </div>
+            <div class="pad o5 hihatPad"></div>
+            <div class="pad o6 hihatPad"></div>
+            <div class="pad o7 hihatPad"></div>
+            <div class="pad o8 hihatPad"></div>
+          </div>
+        </div>
+
+        <div class="beatBox">
+          <h2>Snare</h2>
+          <select class="snareSelect">
+            <option>Snare Classic</option>
+          </select>
+          <div class="pads">
+            <div class="pad o1 snarePad"></div>
+            <div class="pad o2 snarePad"></div>
+            <div class="pad o3 snarePad"></div>
+            <div class="pad o4 snarePad"></div>
+            <div class="muteBtn">
+              <button><img src="./assets/icons/volumeFull.svg" alt="" /></button>
+            </div>
+            <div class="pad o5 snarePad"></div>
+            <div class="pad o6 snarePad"></div>
+            <div class="pad o7 snarePad"></div>
+            <div class="pad o8 snarePad"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tempo">
+        <input type="range" min="0" max="300" />
+        <p>Tempo: <span class="tempoValue">150</span> BPM</p>
+      </div>
+
+      <div class="playBtn">
+        <button>Play</button>
+      </div>
+    </main>
+
+    <audio src="./audios/kick/kickClassic.wav" class="kickAudio"></audio>
+    <audio src="./audios/hihat/hihat808.wav" class="hihatAudio"></audio>
+    <audio src="./audios/snare/snare808.wav" class="snareAudio"></audio>
+  </body>
+</html>

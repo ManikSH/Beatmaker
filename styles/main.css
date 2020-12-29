@@ -1,0 +1,148 @@
+/** ================================ Global ============================= **/
+
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url(../fonts/pattaya/Pattaya-Regular.ttf);
+  font-family: pattaya;
+}
+
+@font-face {
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
+  font-family: poppins;
+}
+
+body {
+  font-family: pattaya;
+  background-color: rgb(107, 0, 41);
+}
+
+/**============================ Header =======================================**/
+
+header {
+  letter-spacing: 0.15rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.7rem;
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+.beatBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.beatBox h2 {
+    padding-bottom: 0.5rem;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  color: white;
+}
+
+.beatBox {
+    padding: 0rem 2rem;
+}
+
+select {
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: poppins;
+}
+
+.pads {
+  display: grid;
+  grid-template-columns: repeat(3, 4rem);
+  grid-template-rows: repeat(3, 4rem);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pad {
+  background: white;
+  cursor: pointer;
+}
+
+.kickPad {
+  background: rgb(0, 212, 0);
+}
+
+.hihatPad {
+  background: rgb(0, 247, 255);
+}
+
+.snarePad {
+  background: orange;
+}
+
+.muteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.muteBtn button {
+  background: none;
+  border: none;
+  height: 80%;
+  width: 80%;
+}
+
+.muteBtn button img {
+  height: 100%;
+  width: 100%;
+}
+
+/* *================================ Tempo ===========================* */
+
+.tempo {
+  text-align: center;
+  margin: 2rem 2rem 1rem 2rem;
+}
+
+.tempo input {
+  width: 30rem;
+  appearance: none;
+  border-radius: 1rem;
+  height: 0.5rem;
+  padding: 0rem;
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 0, 0));
+  outline: none;
+  cursor: e-resize;
+}
+
+.tempo p {
+  font-family: poppins;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/** ================================= Button ============================== **/
+
+.playBtn {
+    text-align: center;
+}
+
+.playBtn button {
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: pattaya;
+    background: rgb(56, 56, 56);
+    padding: 0.2rem 4rem;
+    border-radius: 5rem;
+    outline: none;
+    cursor: pointer;
+}

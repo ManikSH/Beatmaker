@@ -1,0 +1,11 @@
+@media (max-width: 863px) {
+    .beatBox {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .tempo input {
+        width: 90%;
+    }
+}
