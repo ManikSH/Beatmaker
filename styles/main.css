@@ -78,12 +78,24 @@ select {
   background: rgb(0, 212, 0);
 }
 
+.kickPad.active {
+  background: rgb(0, 82, 0);
+}
+
 .hihatPad {
   background: rgb(0, 247, 255);
 }
 
+.hihatPad.active {
+  background: rgb(0, 89, 92);
+}
+
 .snarePad {
   background: orange;
+}
+
+.snarePad.active {
+  background: rgb(114, 74, 0);
 }
 
 .muteBtn {
@@ -93,13 +105,16 @@ select {
 }
 
 .muteBtn button {
+  cursor: pointer;
   background: none;
   border: none;
+  outline: none;
   height: 80%;
   width: 80%;
 }
 
 .muteBtn button img {
+  pointer-events: none;
   height: 100%;
   width: 100%;
 }
@@ -116,7 +131,6 @@ select {
   appearance: none;
   border-radius: 1rem;
   height: 0.5rem;
-  padding: 0rem;
   background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 0, 0));
   outline: none;
   cursor: e-resize;
@@ -128,7 +142,7 @@ select {
   font-size: 1.1rem;
 }
 
-/** ================================= Button ============================== **/
+/** ================================= Play Button ============================== **/
 
 .playBtn {
     text-align: center;
@@ -145,4 +159,15 @@ select {
     border-radius: 5rem;
     outline: none;
     cursor: pointer;
+}
+
+/** ======================================= Animations =============================== **/
+
+
+@keyframes rotate {
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(1.2);
+  }
 }
